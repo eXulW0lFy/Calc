@@ -15,22 +15,22 @@ public class Konsole {
 //		Binary bin = new Binary("101010");
 //		System.out.println(bin.toDecimal());
 		
-		Math.addExp("3 + 4 * 2 / (1 - 5)");
+		Math.addExp("3 + 4 * 2 / (1 - 5)"); // @// = 1
 		Math.solve();
 		
-		Math.addExp("-2 + 5"); // _2 5 +
+		Math.addExp("-2 + 5"); // _2 5 + @// 3
 		Math.solve();
-		Math.addExp("95 * 8 / (56 + 6)"); // 95 8 * 56 6 + /
+		Math.addExp("95 * 8 / (56 + 6)"); // 95 8 * 56 6 + / @// = 12.258
 		Math.solve();
-		Math.addExp("95 * (9 - 99 / 57) - 31"); // 95 9 99 57 / - * 31 -
+		Math.addExp("95 * (9 - 99 / 57) - 31"); // 95 9 99 57 / - * 31 - @// = 359
 		Math.solve();
-		Math.addExp("((2 + 5) * 6 ) / 3"); // 2 5 + 6 * 3 /
+		Math.addExp("((2 + 5) * 6 ) / 3"); // 2 5 + 6 * 3 / @// = 14
 		
 		{{}{}}
 		Math.solve();
-		Math.addExp("3 * 2 * (-5 / 4 + (-2) * 3) - 78"); // 3 2 * _5 4 / _2 3 * + * 78
+		Math.addExp("3 * 2 * (-5 / 4 + (-2) * 3) - 78"); // 3 2 * _5 4 / _2 3 * + * 78 @// = -596.75
 		Math.solve();
-		Math.addExp("(-22 + 5) / (-3)"); //
+		Math.addExp("(-22 + 5) / (-3)"); // @// = 5.66666666666
 		Math.solve();
 		
 		Runnable run5 = () -> {

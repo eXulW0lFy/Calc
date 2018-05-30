@@ -50,7 +50,7 @@ class Math {
 	
 	static private String[] getCurvaString() {
 		String[] input = exps;
-		String[] output = new String[input.length];
+		String[] output = new String[input.length + 2];
 		byte c = 0;
 		Stack<String> stack = new Stack<>();
 		for (String in : input) {
@@ -108,6 +108,7 @@ class Math {
 				if ((curva[i].equals("+") || curva[i].equals("-") ||
 						curva[i].equals("*") || curva[i].equals("/"))) {
 					res = res + solution(i);
+					i -= 2;
 				}
 			}
 		}
@@ -126,7 +127,7 @@ class Math {
 					!Objects.equals(curva[i], "*") || !Objects.equals(curva[i], "/");
 			boolean b2 = !(Objects.equals(curva[i], "+") && Objects.equals(curva[i], "-") &&
 					Objects.equals(curva[i], "*") && Objects.equals(curva[i], "/"));
-			if (a && (b || b2)) {
+			if (a && b && b2) {
 				if (exam[2].equals("")) {
 					exam[2] = curva[i];
 				} else if (exam[1].equals("")) {
